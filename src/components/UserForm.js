@@ -60,11 +60,20 @@ export class UserForm extends Component {
         />
       )
       case 3:
-        return <h1>Confirm</h1>
+      return (
+        <Confirm
+          nextStep={this.nextStep}
+          prevStep={this.prevStep}
+          handleChange={this.handleChange}
+          values={values}
+        />
+      )
       case 4:
-        return <h1>Success</h1>
+        return <Success />
     }
   }
 }
 
 export default UserForm;
+
+//npm install ws@3.3.2 --save-dev --save-exact

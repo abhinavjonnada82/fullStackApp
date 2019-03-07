@@ -12,7 +12,7 @@ export class FormPersonalDetails extends Component {
   back = e => {
     e.preventDefault()
     this.props.prevStep()
-}
+  }
   render() {
       const { values, handleChange} = this.props;
     return (
